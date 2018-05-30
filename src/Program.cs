@@ -64,6 +64,8 @@ namespace CrazyWebsite
                 "info@rainingblobs.com"
             );
             CrazyConsole.EndCategory();
+
+            CrazyConsole.Flush();
         }
     }
 }

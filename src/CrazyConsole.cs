@@ -7,23 +7,43 @@ namespace CrazyWebsite
     public static class CrazyConsole
     {
         private static HTMLDivElement _div;
+        private static string _text;
+        private static int _pos;
 
         static CrazyConsole()
         {
             _div = new HTMLDivElement();
+            _text = string.Empty;
+            _pos = 0;
+
             document.body.appendChild(_div);
+        }
+
+        public static void Flush()
+        {
+            if (_pos >= _text.Length)
+            {
+                _div.innerHTML = _text;
+            }
+            else
+            {
+                _div.innerHTML = _text.Substring(0, _pos);
+                _pos += (new Random()).Next(1, 10);
+
+                setTimeout((e) => Flush(), 5);
+            }
         }
 
         public static int InfoSpacing { get; set; }
 
+        public static void Write(string text)
+        {
+            _text += text;
+        }
+
         public static void WriteLine(string line = string.Empty)
         {
             Write(line + "<br>");
-        }
-
-        public static void Write(string text)
-        {
-            _div.innerHTML += text;
         }
 
         public static void WriteInfo(string subject, string value, string link = string.Empty)
@@ -43,7 +63,7 @@ namespace CrazyWebsite
 
         public static void EndCategory()
         {
-            if (!_div.innerHTML.EndsWith("<br><br>"))
+            if (!_text.EndsWith("<br><br>"))
                 CrazyConsole.WriteLine();
             CrazyConsole.WriteLine();
             CrazyConsole.WriteLine();
