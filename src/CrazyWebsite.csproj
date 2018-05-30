@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net47</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bridge" Version="17.0.0" />
+    <PackageReference Include="Retyped.dom" Version="2.8.6685" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="web\PerfectDOS.ttf" />
+    <None Remove="web\index.html" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Content Include="web\PerfectDOS.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="web\index.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>

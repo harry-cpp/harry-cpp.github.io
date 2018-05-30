@@ -1,0 +1,29 @@
+{
+  "output": "$(OutDir)/web/",
+  "outputFormatting": "Minified",
+  "console": {
+    "enabled": false
+  },
+  "sourceMap": {
+    "enabled": false
+  },
+  "reflection": {
+    "disabled": true
+  },
+  "html": {
+    "disabled": true
+  },
+  "generateTypeScript": false,
+  "cleanOutputFolderBeforeBuild": false,
+  "report": {
+    "enabled": false
+  },
+  "rules": {
+    "anonymousType": "Plain",
+    "arrayIndex": "Managed",
+    "autoProperty": "Plain",
+    "boxing": "Managed",
+    "integer": "Managed",
+    "lambda": "Plain"
+  }
+}
