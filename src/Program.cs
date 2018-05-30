@@ -9,7 +9,7 @@ namespace CrazyWebsite
             CrazyConsole.InfoSpacing = 16;
 
             CrazyConsole.WriteLine();
-            CrazyConsole.WriteLine("RESUME v1.0.0");
+            CrazyConsole.WriteLine("RESUME v1.1.0");
             CrazyConsole.WriteLine("Powered by C#?");
             CrazyConsole.WriteLine("No seriously, check it out: <a href='https://github.com/cra0zy/cra0zy.github.io'>github.com/cra0zy/cra0zy.github.io</a>" );
             CrazyConsole.WriteLine();
@@ -27,6 +27,17 @@ namespace CrazyWebsite
             CrazyConsole.BeginCategory("Social");
             CrazyConsole.WriteInfo("Github", "cra0zy", "https://github.com/cra0zy");
             CrazyConsole.WriteInfo("Twitter", "@cra0zy", "https://twitter.com/cra0zy");
+            CrazyConsole.EndCategory();
+
+            CrazyConsole.BeginCategory("Skillset");
+            CrazyConsole.WriteInfo("Languages", "C#, C++, C, Java, Python, Javascript, PHP");
+            CrazyConsole.WriteInfo("\"Languages\"", "HTML, CSS, Bash, MySQL, SQL");
+            CrazyConsole.WriteLine("");
+            CrazyConsole.WriteLine("Other:");
+            CrazyConsole.WriteLine(" - Gtk GUI toolkit");
+            CrazyConsole.WriteLine(" - Low level Linux programming");
+            CrazyConsole.WriteLine(" - Making Android apps (both Xamarin and \"native\" way)");
+            CrazyConsole.WriteLine(" - Basics for OpenGL and Vulkan APIs");
             CrazyConsole.EndCategory();
 
             CrazyConsole.BeginCategory("Education");
@@ -62,6 +73,21 @@ namespace CrazyWebsite
                 "I have done the Xbox One port and helped the developer with Mac/Linux ports.",
                 "http://rainingblobs.com/",
                 "info@rainingblobs.com"
+            );
+            CrazyConsole.EndCategory();
+
+            CrazyConsole.BeginCategory("Personal Projects and Stuff");
+            CrazyConsole.WriteWork(
+                "Pong",
+                "It's just a normal pong, nothing suspicious about it!!!",
+                "Yea, this is not normal pong, its a pong that uses a physics engine...  its very addictive, trust me.",
+                "https://github.com/cra0zy/Pong/"
+            );
+            CrazyConsole.WriteWork(
+                "Process Monitor",
+                "Process Monitor is a simple, Gtk based, process monitor for Linux.",
+                "This was a project for my university, it turned out nicely.",
+                "https://github.com/MATF-RS18/RS015-process-monitor"
             );
             CrazyConsole.EndCategory();
 
