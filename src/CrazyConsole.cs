@@ -26,9 +26,13 @@ namespace CrazyWebsite
             _div.innerHTML += text;
         }
 
-        public static void WriteInfo(string subject, string value)
+        public static void WriteInfo(string subject, string value, string link = string.Empty)
         {
-            WriteLine((subject + ": ").PadRight(InfoSpacing, '.') + " " + value);
+            var valueinfo = value;
+            if (!string.IsNullOrWhiteSpace(link))
+                valueinfo = "<a href='" + link + "'>" + valueinfo + "</a>";
+
+            WriteLine((subject + ": ").PadRight(InfoSpacing, '.') + " " + valueinfo);
         }
 
         public static void BeginCategory(string title)

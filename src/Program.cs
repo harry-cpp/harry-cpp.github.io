@@ -24,6 +24,11 @@ namespace CrazyWebsite
             CrazyConsole.WriteInfo("Mail", "cra0zy@gmail.com");
             CrazyConsole.EndCategory();
 
+            CrazyConsole.BeginCategory("Social");
+            CrazyConsole.WriteInfo("Github", "cra0zy", "https://github.com/cra0zy");
+            CrazyConsole.WriteInfo("Twitter", "@cra0zy", "https://twitter.com/cra0zy");
+            CrazyConsole.EndCategory();
+
             CrazyConsole.BeginCategory("Education");
             CrazyConsole.WriteInfo("Highschool", "ETS \"Zemun\"");
             CrazyConsole.WriteInfo("University", "University of Belgrade Faculty of Mathematics (WIP)");
@@ -33,7 +38,7 @@ namespace CrazyWebsite
             CrazyConsole.WriteWork(
                 "MonoGame",
                 "MonoGame is an open source implementation of the Microsoft XNA 4 Framework.",
-                "I have been a developer on it for a few years, and now I am one of the maintainers for the project.",
+                "I have been a developer on it for a few years, and now I am one of the project maintainers.",
                 "http://www.monogame.net/"
             );
             CrazyConsole.WriteWork(
@@ -44,7 +49,7 @@ namespace CrazyWebsite
             );
             CrazyConsole.WriteWork(
                 "GtkSharp",
-                "NET Standard wrappers for Gtk 3+ and other related libraries",
+                "NET Standard wrappers for Gtk 3+ and other related libraries.",
                 "Since gtk-sharp repo never got to ever releasing a stable 3.0 version for the wrappers, I have decided to take it upon myself to maintain a wrapper set for Gtk 3+ versions.",
                 "https://github.com/GtkSharp/GtkSharp"
             );
