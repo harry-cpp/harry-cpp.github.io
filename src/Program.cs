@@ -1,9 +1,17 @@
 ﻿using System;
+using static Retyped.dom;
 
 namespace CrazyWebsite
 {
     class Program
     {
+        private static string[] _languagetroll = new string[] {
+            " - Languages: C#, C++, C, Java, Python, Javascript, PHP<br> - \"Languages\": HTML, CSS, Bash, SQL",
+            " - Languages: C#, C++, C, Java, Python, Javascript, PHP<br> - \"Languages\": HTML, CSS, Bash, MySQL, SQL",
+            " - Languages: C#, C/C++, Java, Python, Javascript, PHP<br> - \"Languages\": HTML, CSS, Bash, SQL",
+            " - Languages: C#, C++, C, Java, Python, Javascript, PHP, HTML, CSS, Bash, SQL<br> - \"Languages\": Java"
+        };
+
         static void Main(string[] args)
         {
             CrazyConsole.InfoSpacing = 16;
@@ -30,10 +38,9 @@ namespace CrazyWebsite
             CrazyConsole.EndCategory();
 
             CrazyConsole.BeginCategory("Skillset");
-            CrazyConsole.WriteInfo("Languages", "C#, C++, C, Java, Python, Javascript, PHP");
-            CrazyConsole.WriteInfo("\"Languages\"", "HTML, CSS, Bash, MySQL, SQL");
-            CrazyConsole.WriteLine("");
-            CrazyConsole.WriteLine("Other:");
+            CrazyConsole.Write("<div id='troll'>");
+            CrazyConsole.Write(_languagetroll[(new Random()).Next(1, _languagetroll.Length)]);
+            CrazyConsole.Write("</div>");
             CrazyConsole.WriteLine(" - Gtk GUI toolkit");
             CrazyConsole.WriteLine(" - Low level Linux programming");
             CrazyConsole.WriteLine(" - Making Android apps (both Xamarin and \"native\" way)");
@@ -91,6 +98,22 @@ namespace CrazyWebsite
             );
             CrazyConsole.EndCategory();
 
+            CrazyConsole.OnFlushComplete += (useless, alsouseless) => {
+                var skillset = document.getElementById("Skillset");
+                // skillset.style.background = "#424242";
+
+                skillset.onmouseenter += (e) => {
+                    // skillset.style.background = "#363636";
+                    document.getElementById("troll").innerHTML = _languagetroll[0];
+                    return false;
+                };
+
+                skillset.onmouseleave += (e) => {
+                    // skillset.style.background = "#424242";
+                    document.getElementById("troll").innerHTML = _languagetroll[(new Random()).Next(1, _languagetroll.Length)];
+                    return false;
+                };
+            };
             CrazyConsole.Flush();
         }
     }

@@ -19,11 +19,15 @@ namespace CrazyWebsite
             document.body.appendChild(_div);
         }
 
+        public static int InfoSpacing { get; set; }
+        public static EventHandler OnFlushComplete;
+
         public static void Flush()
         {
-            if (_pos >= _text.Length)
+            if (_pos >= _text.Length || _div.clientHeight >= window.innerHeight)
             {
                 _div.innerHTML = _text;
+                OnFlushComplete?.Invoke(null, EventArgs.Empty);
             }
             else
             {
@@ -33,8 +37,6 @@ namespace CrazyWebsite
                 setTimeout((e) => Flush(), 5);
             }
         }
-
-        public static int InfoSpacing { get; set; }
 
         public static void Write(string text)
         {
@@ -57,6 +59,7 @@ namespace CrazyWebsite
 
         public static void BeginCategory(string title)
         {
+            CrazyConsole.Write("<div class='category' id='" + title + "'>");
             CrazyConsole.WriteLine("[" + title + "]");
             CrazyConsole.WriteLine();
         }
@@ -65,6 +68,7 @@ namespace CrazyWebsite
         {
             if (!_text.EndsWith("<br><br>"))
                 CrazyConsole.WriteLine();
+            CrazyConsole.Write("</div>");
             CrazyConsole.WriteLine();
             CrazyConsole.WriteLine();
         }
