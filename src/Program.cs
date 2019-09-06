@@ -17,7 +17,7 @@ namespace CrazyWebsite
             CrazyConsole.InfoSpacing = 16;
 
             CrazyConsole.WriteLine();
-            CrazyConsole.WriteLine("RESUME v1.1.0");
+            CrazyConsole.WriteLine("RESUME v1.2.0");
             CrazyConsole.WriteLine("Powered by C#?");
             CrazyConsole.WriteLine("No seriously, check it out: <a href='https://github.com/cra0zy/cra0zy.github.io'>github.com/cra0zy/cra0zy.github.io</a>" );
             CrazyConsole.WriteLine();
@@ -41,6 +41,7 @@ namespace CrazyWebsite
             CrazyConsole.Write("<div id='troll'>");
             CrazyConsole.Write(_languagetroll[(new Random()).Next(1, _languagetroll.Length)]);
             CrazyConsole.Write("</div>");
+            CrazyConsole.WriteLine(" - Unity");
             CrazyConsole.WriteLine(" - Gtk GUI toolkit");
             CrazyConsole.WriteLine(" - Low level Linux programming");
             CrazyConsole.WriteLine(" - Making Android apps (both Xamarin and \"native\" way)");
@@ -50,6 +51,25 @@ namespace CrazyWebsite
             CrazyConsole.BeginCategory("Education");
             CrazyConsole.WriteInfo("Highschool", "ETS \"Zemun\"");
             CrazyConsole.WriteInfo("University", "University of Belgrade Faculty of Mathematics (WIP)");
+            CrazyConsole.EndCategory();
+
+            CrazyConsole.BeginCategory("Work Experience");
+            CrazyConsole.WriteWork(
+                "Two Desperados",
+                "Two Desperados is game company that develops zuma style games for mobile (WokaWoka and Violas Quest).",
+                "I have been working for Two Desperados for more than an year, currently the main dev for WokaWoka.",
+                "http://www.twodesperados.com/"
+            );
+            CrazyConsole.EndCategory();
+
+            CrazyConsole.BeginCategory("Contracted Work Experience");
+            CrazyConsole.WriteWork(
+                "Raining Blobs",
+                "Raining Blobs is 1-16 players, arcade, challenging, falling blobs, puzzle game. Inspired by japanese classics.",
+                "I have done the Xbox One port and helped the developer with Mac/Linux ports.",
+                "http://rainingblobs.com/",
+                "info@rainingblobs.com"
+            );
             CrazyConsole.EndCategory();
 
             CrazyConsole.BeginCategory("Open Source Work Experience");
@@ -70,31 +90,6 @@ namespace CrazyWebsite
                 "NET Standard wrappers for Gtk 3+ and other related libraries.",
                 "Since gtk-sharp repo never got to ever releasing a stable 3.0 version for the wrappers, I have decided to take it upon myself to maintain a wrapper set for Gtk 3+ versions.",
                 "https://github.com/GtkSharp/GtkSharp"
-            );
-            CrazyConsole.EndCategory();
-
-            CrazyConsole.BeginCategory("Contracted Work Experience");
-            CrazyConsole.WriteWork(
-                "Raining Blobs",
-                "Raining Blobs is 1-16 players, arcade, challenging, falling blobs, puzzle game. Inspired by japanese classics.",
-                "I have done the Xbox One port and helped the developer with Mac/Linux ports.",
-                "http://rainingblobs.com/",
-                "info@rainingblobs.com"
-            );
-            CrazyConsole.EndCategory();
-
-            CrazyConsole.BeginCategory("Personal Projects and Stuff");
-            CrazyConsole.WriteWork(
-                "Pong",
-                "It's just a normal pong, nothing suspicious about it!!!",
-                "Yea, this is not normal pong, its a pong that uses a physics engine...  its very addictive, trust me.",
-                "https://github.com/cra0zy/Pong/"
-            );
-            CrazyConsole.WriteWork(
-                "Process Monitor",
-                "Process Monitor is a simple, Gtk based, process monitor for Linux.",
-                "This was a project for my university, it turned out nicely.",
-                "https://github.com/MATF-RS18/RS015-process-monitor"
             );
             CrazyConsole.EndCategory();
 
