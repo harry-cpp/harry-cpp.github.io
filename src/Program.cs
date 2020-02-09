@@ -1,6 +1,4 @@
-﻿using System;
-using static Retyped.dom;
-
+﻿
 namespace CrazyWebsite
 {
     class Program
@@ -10,7 +8,7 @@ namespace CrazyWebsite
             CrazyConsole.InfoSpacing = 16;
 
             CrazyConsole.WriteLine();
-            CrazyConsole.WriteLine("RESUME v1.3.0");
+            CrazyConsole.WriteLine("RESUME v1.3.1");
             CrazyConsole.WriteLine("Powered by C#?");
             CrazyConsole.WriteLine("No seriously, check it out: <a href='https://github.com/harry-cpp/harry-cpp.github.io'>github.com/harry-cpp/harry-cpp.github.io</a>" );
             CrazyConsole.WriteLine();
@@ -25,6 +23,7 @@ namespace CrazyWebsite
             CrazyConsole.WriteInfo("Mail", "cra0zy@gmail.com");
             CrazyConsole.WriteInfo("Github", "harry-cpp", "https://github.com/harry-cpp");
             CrazyConsole.WriteInfo("Twitter", "@harry_cpp", "https://twitter.com/harry_cpp");
+            CrazyConsole.WriteInfo("NuGet", "cra0zy", "https://www.nuget.org/profiles/cra0zy");
             CrazyConsole.EndCategory();
 
             CrazyConsole.BeginCategory("Education");
@@ -41,17 +40,17 @@ namespace CrazyWebsite
             );
             CrazyConsole.EndCategory();
 
-            CrazyConsole.BeginCategory("Contracted Work Experience");
+            CrazyConsole.BeginCategory("Contracted Work");
             CrazyConsole.WriteWork(
                 "Raining Blobs",
                 "Raining Blobs is 1-16 players, arcade, challenging, falling blobs, puzzle game. Inspired by japanese classics.",
-                "I have done the Switch and Xbox One port and helped the developer with Mac and Linux ports.",
+                "I have done the Switch and Xbox One ports and helped the developer with Mac and Linux ports.",
                 "http://rainingblobs.com/",
                 "info@rainingblobs.com"
             );
             CrazyConsole.EndCategory();
 
-            CrazyConsole.BeginCategory("Open Source Work Experience");
+            CrazyConsole.BeginCategory("Open Source Work");
             CrazyConsole.WriteWork(
                 "MonoGame",
                 "MonoGame is an open source implementation of the Microsoft XNA 4 Framework.",
@@ -59,16 +58,22 @@ namespace CrazyWebsite
                 "http://www.monogame.net/"
             );
             CrazyConsole.WriteWork(
-                "Eto.Forms",
-                "A cross platform desktop and mobile user interface framework.",
-                "I have conributed a lot to the Gtk backend, tho I do contribute to other backends as well.",
-                "https://github.com/picoe/Eto"
-            );
-            CrazyConsole.WriteWork(
                 "GtkSharp",
                 "NET Standard wrappers for Gtk 3+ and other related libraries.",
                 "Since gtk-sharp repo never got to ever releasing a stable 3.0 version for the wrappers, I have decided to take it upon myself to maintain a wrapper set for Gtk 3+ versions.",
                 "https://github.com/GtkSharp/GtkSharp"
+            );
+            CrazyConsole.WriteWork(
+                "Eto.Forms",
+                "A cross platform desktop and mobile user interface framework.",
+                "I have conributed a lot to the Gtk backend, tho I do contribute to other backends as well.",
+                "https://github.com/harry-cpp/code-nautilus"
+            );
+            CrazyConsole.WriteWork(
+                "code-nautilus",
+                "Visual Studio Code extension for Nautilus.",
+                "There are no \"Open Code Here\" options with Linux file managers so I made my own extension for it.",
+                "https://github.com/harry-cpp/code-nautilus"
             );
             CrazyConsole.EndCategory();
             
