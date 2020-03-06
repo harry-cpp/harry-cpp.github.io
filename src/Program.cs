@@ -67,7 +67,7 @@ namespace CrazyWebsite
                 "Eto.Forms",
                 "A cross platform desktop and mobile user interface framework.",
                 "I have conributed a lot to the Gtk backend, tho I do contribute to other backends as well.",
-                "https://github.com/harry-cpp/code-nautilus"
+                "https://github.com/picoe/Eto"
             );
             CrazyConsole.WriteWork(
                 "code-nautilus",
