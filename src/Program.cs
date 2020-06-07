@@ -8,7 +8,7 @@ namespace CrazyWebsite
             CrazyConsole.InfoSpacing = 16;
 
             CrazyConsole.WriteLine();
-            CrazyConsole.WriteLine("RESUME v1.3.1");
+            CrazyConsole.WriteLine("RESUME v1.3.2");
             CrazyConsole.WriteLine("Powered by C#?");
             CrazyConsole.WriteLine("No seriously, check it out: <a href='https://github.com/harry-cpp/harry-cpp.github.io'>github.com/harry-cpp/harry-cpp.github.io</a>" );
             CrazyConsole.WriteLine();
@@ -35,8 +35,14 @@ namespace CrazyWebsite
             CrazyConsole.WriteWork(
                 "Two Desperados",
                 "Two Desperados is game company that develops zuma style games for mobile (WokaWoka and Violas Quest).",
-                "I have been working for Two Desperados since June of 2018 as a Sofrware Engineer.",
+                "I have been working for Two Desperados since June of 2018 till March of 2020 as a Sofrware Engineer.",
                 "http://www.twodesperados.com/"
+            );
+            CrazyConsole.WriteWork(
+                "Ubisoft Belgrade",
+                "Ubisoft Entertainment SA is a French video game company headquartered in Montreuil with several development studios across the world.",
+                "I have been working for Ubisoft since April of 2020 as a Porgrammer.",
+                "https://www.ubisoft.com/en-US/studio/belgrade.aspx"
             );
             CrazyConsole.EndCategory();
 
@@ -44,7 +50,7 @@ namespace CrazyWebsite
             CrazyConsole.WriteWork(
                 "Raining Blobs",
                 "Raining Blobs is 1-16 players, arcade, challenging, falling blobs, puzzle game. Inspired by japanese classics.",
-                "I have done the Switch and Xbox One ports and helped the developer with Mac and Linux ports.",
+                "I have done the Switch, Xbox One and iOS ports and helped the developer with Mac and Linux ports.",
                 "http://rainingblobs.com/",
                 "info@rainingblobs.com"
             );
