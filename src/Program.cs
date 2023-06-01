@@ -8,7 +8,7 @@ namespace CrazyWebsite
             CrazyConsole.InfoSpacing = 16;
 
             CrazyConsole.WriteLine();
-            CrazyConsole.WriteLine("RESUME v1.3.2");
+            CrazyConsole.WriteLine("RESUME v1.4.0");
             CrazyConsole.WriteLine("Powered by C#?");
             CrazyConsole.WriteLine("No seriously, check it out: <a href='https://github.com/harry-cpp/harry-cpp.github.io'>github.com/harry-cpp/harry-cpp.github.io</a>" );
             CrazyConsole.WriteLine();
@@ -20,28 +20,23 @@ namespace CrazyWebsite
             CrazyConsole.WriteInfo("Username", "harry-cpp");
             CrazyConsole.WriteInfo("Nickname", "Harry");
             CrazyConsole.WriteInfo("Name", "Marko Jeremic");
-            CrazyConsole.WriteInfo("Mail", "cra0zy@gmail.com");
+            CrazyConsole.WriteInfo("Mail", "harry.cpp@gmail.com");
             CrazyConsole.WriteInfo("Github", "harry-cpp", "https://github.com/harry-cpp");
             CrazyConsole.WriteInfo("Twitter", "@harry_cpp", "https://twitter.com/harry_cpp");
             CrazyConsole.WriteInfo("NuGet", "cra0zy", "https://www.nuget.org/profiles/cra0zy");
-            CrazyConsole.EndCategory();
-
-            CrazyConsole.BeginCategory("Education");
-            CrazyConsole.WriteInfo("Highschool", "ETS \"Zemun\"");
-            CrazyConsole.WriteInfo("University", "University of Belgrade Faculty of Mathematics (WIP)");
             CrazyConsole.EndCategory();
 
             CrazyConsole.BeginCategory("Work Experience");
             CrazyConsole.WriteWork(
                 "Two Desperados",
                 "Two Desperados is game company that develops zuma style games for mobile (WokaWoka and Violas Quest).",
-                "I have been working for Two Desperados since June of 2018 till March of 2020 as a Sofrware Engineer.",
+                "I have been working for Two Desperados since June of 2018 till March of 2020 as a Software Engineer.",
                 "http://www.twodesperados.com/"
             );
             CrazyConsole.WriteWork(
                 "Ubisoft Belgrade",
                 "Ubisoft Entertainment SA is a French video game company headquartered in Montreuil with several development studios across the world.",
-                "I have been working for Ubisoft since April of 2020 as a Porgrammer.",
+                "I have been working for Ubisoft since April of 2020 as a programmer.",
                 "https://www.ubisoft.com/en-US/studio/belgrade.aspx"
             );
             CrazyConsole.EndCategory();
