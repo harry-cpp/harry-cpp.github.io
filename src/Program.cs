@@ -37,7 +37,7 @@ namespace CrazyWebsite
                 "Ubisoft Belgrade",
                 "Ubisoft Entertainment SA is a French video game company headquartered in Montreuil with several development studios across the world.",
                 "I have been working for Ubisoft since April of 2020 as a programmer.",
-                "https://www.ubisoft.com/en-US/studio/belgrade.aspx"
+                "https://www.ubisoft.com/en-us/company/careers/locations/belgrade"
             );
             CrazyConsole.EndCategory();
 
